@@ -1,151 +1,91 @@
 # 🏥 Hospital Management System
 
-A comprehensive and user-friendly Hospital Management System (HMS) designed to streamline the operations of hospitals and clinics. This system helps manage patient records, appointments, staff, billing, and medical data efficiently.
+This project is a comprehensive web-based **Hospital Management System** designed to streamline hospital operations across multiple departments. It supports various user roles such as Admin, Doctor, Nurse, Receptionist, Lab Technician, Pharmacist, Cashier, and Patient. Built using **Java Spring Boot** for the backend and **React** for the frontend, the system facilitates effective management of patient care, appointments, medical records, billing, and more.
 
-## 📌 Features
+---
 
-- 👨‍⚕️ **Patient Management**  
-  - Register new patients  
-  - View and update patient records  
-  - Track medical history and reports
+## 🧩 Role-Based Features
 
-- 📅 **Appointment Scheduling**  
-  - Book appointments with doctors  
-  - Calendar view for scheduling  
-  - Notifications and reminders
+- **Admin**
+  - Manage departments, doctors, and staff
+  - Monitor appointments and inventory
+  - Generate reports and analytics
 
-- 🩺 **Doctor & Staff Management**  
-  - Add, update, and remove doctor/staff profiles  
-  - Assign duties and shifts  
-  - Track availability and specialization
+- **Patient**
+  - Secure registration and login
+  - Book, view, and manage appointments
+  - Access prescriptions, reports, and billing history
 
-- 💊 **Inventory Management**  
-  - Manage medicines and equipment  
-  - Track stock levels and expiry dates
+- **Receptionist**
+  - Register new patients and manage profiles
+  - Schedule appointments and assign clinic slots
 
-- 🧾 **Billing and Invoicing**  
-  - Generate and print bills  
-  - Record payments and receipts  
-  - Insurance claim support
+- **Doctor**
+  - View appointments and patient records
+  - Update diagnoses and prescribe medications
 
-- 📈 **Reports and Analytics**  
-  - Daily/weekly/monthly reports  
-  - Visual dashboards for performance metrics
+- **Nurse**
+  - View assigned patients and record vitals
 
-## 🛠️ Technologies Used
+- **Lab Technician**
+  - Manage and record lab tests and results
 
-- **Frontend:** HTML, CSS, JavaScript (or React/Angular/Vue)  
-- **Backend:** Node.js / PHP / Python (Flask or Django) / Java (Spring Boot)  
-- **Database:** MySQL / PostgreSQL / MongoDB  
-- **Authentication:** JWT / Session-based  
-- **Hosting (Optional):** Heroku / Netlify / Vercel / AWS
+- **Pharmacist**
+  - Fulfill prescriptions and manage medicine stock
 
-## 🏁 Getting Started
+- **Cashier**
+  - Generate and process patient bills
+
+---
+
+## ⚙️ Tech Stack
+
+- **Backend**: Java (Spring Boot), Spring Security (JWT), Hibernate (JPA)
+- **Frontend**: React, Axios, React Router, Bootstrap / Material UI
+- **Database**: MySQL / PostgreSQL
+- **DevOps & Tools**: Docker, Maven/Gradle, Postman, GitHub, AWS/Heroku
+
+---
+
+## 🧱 System Architecture & Modules
+
+1. **Authentication & Authorization**
+   - JWT-based login system with role-based access control
+
+2. **Core Modules**
+   - User Management: Admin, Doctors, Nurses, Patients, etc.
+   - Appointments: Scheduling, managing, and tracking
+   - Prescriptions and Vitals Tracking
+   - Lab Management: Test scheduling and reporting
+   - Inventory Management: Pharmacy and medicines
+   - Billing System: Payment tracking and invoice generation
+
+3. **Example API Endpoints**
+   - `POST /register` – Register a patient
+   - `POST /login` – Login and receive JWT token
+   - `GET /doctors?dept=xyz` – List doctors by department
+   - `POST /appointments` – Book an appointment
+   - `POST /vitals` – Update patient vitals
+   - `POST /lab-results` – Upload lab results
+   - `POST /prescriptions` – Create a prescription
+   - `GET /inventory` – Check medicine stock
+   - `POST /bills` – Generate a patient bill
+
+---
+
+## 🛠️ Setup & Installation
 
 ### Prerequisites
 
-- Node.js / Python / Java installed
-- MySQL or any supported database running
+- Java 17 or higher
+- Node.js 16+
+- MySQL or PostgreSQL
+- Docker & Docker Compose (optional)
 
-### Installation
+### Step-by-Step Installation
 
-git clone https://github.com/yourusername/hospital-management-system.git
-cd hospital-management-system
-npm install  # or pip install -r requirements.txt
-
-
-# Hospital Management System
-
-This project implements a robust *Hospital Management System* with distinct roles (Admin, Doctors, Nurses, Receptionist, Lab, Pharmacy, Cashier, Patients). It offers a full suite of features to efficiently manage patient care, appointments, medical records, billing, and resource allocation—built with a Java Spring Boot backend and React frontend.  
-
----
-
-## 🛠 Features by Role
-
-- *Admin*  
-  - Manage hospital structure: departments, doctors, staff  
-  - Oversee appointments, generate reports, monitor medicines inventory  
-
-- *Patient*  
-  - Register/login with secure authentication  
-  - Book, view, and manage appointments  
-  - Access prescriptions, lab reports, and payment history  
-
-- *Receptionist*  
-  - Register new patients or update existing profiles  
-  - Schedule appointments and assign clinic numbers  
-
-- *Doctor*  
-  - View schedule and manage patient diagnosis  
-  - Prescribe drugs and update patient status  
-
-- *Nurse/Staff*  
-  - View assigned patients, record vitals and assist in care  
-
-- *Lab Assistant*  
-  - Manage lab tests, enter specimen data and results  
-
-- *Pharmacist*  
-  - Fulfill prescriptions, manage drug stock and dosage instructions  
-
-- *Cashier*  
-  - Generate invoices and manage payments  
-
----
-
-## ⚙ Technology Stack
-
-- *Backend*: Java (Spring Boot), Spring Security (JWT), JPA/Hibernate  
-- *Database*: MySQL / PostgreSQL  
-- *Frontend*: React (React Router, Axios), styled with Material-UI or Bootstrap  
-- *Deployment/Dev Tools*: Docker, Maven/Gradle, Postman, GitHub, AWS/Heroku  
-
----
-
-## 🎯 Architecture & Modules
-
-1. *Authentication & Roles*  
-   Secure JWT‑based login with role-based access control.
-
-2. *Modules*  
-   - Users, Patients, Doctors, Staff, Departments  
-   - Appointments, Prescriptions, Vitals, Lab Reports  
-   - Inventory (Pharmacy Stock), Billing, Dashboard Reporting  
-
-3. *API Endpoints (Samples)*  
-   - POST /register – patient registration  
-   - POST /login – obtain JWT  
-   - GET /doctors?dept=... – list doctors  
-   - POST /appointments – book appointment  
-   - GET /appointments – view booked appointments  
-   - POST /vitals – nurses update vitals  
-   - POST /lab-results – lab assistant uploads results  
-   - POST /prescriptions – doctor prescription writing  
-   - GET /inventory – pharmacist checks stock  
-   - POST /bills – cashier generates invoice  
-
----
-
-## 💡 Setup & Installation
-
-*Prerequisites*: Java 17+, Node 16+, Docker & Docker‑Compose, MySQL/PostgreSQL
-
-
-# Clone repo
+```bash
+# Clone the repository
 git clone https://github.com/SPARK45118/hospital-management-system.git
 cd hospital-management-system
 
-# Backend setup
-cd backend
-./mvnw clean package
-java -jar target/*.jar
-
-# Frontend setup
-cd ../frontend
-npm install
-npm start
-
-# Access the app
-# Frontend: http://localhost:3000
-# Backend API: http://localhost:8080
-```bash
