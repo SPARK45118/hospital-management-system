@@ -6,24 +6,8 @@ A comprehensive, full-stack hospital management system built with *Next.js 14, *
 
 - *🌐 Production*: [https://hospital-management-system-spark45118.vercel.app](https://hospital-management-system-spark45118.vercel.app)
 - *📱 GitHub Repository*: [https://github.com/SPARK45118/hospital-management-system](https://github.com/SPARK45118/hospital-management-system)
-- *👨‍💻 Developer*: [SPARK45118](https://github.com/SPARK45118)
+- *👨‍💻 Developer*:Team Arogya
 
-
-## Table of Contents
-
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Database Schema](#-database-schema)
-- [Getting Started](#-getting-started)
-- [Environment Variables](#-environment-variables)
-- [API Routes](#-api-routes)
-- [Demo Credentials](#-demo-credentials)
-- [Screenshots](#-screenshots)
-- [Database Operations](#-database-operations)
-- [Deployment](#-deployment)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
 
 
 ## Features
@@ -453,7 +437,7 @@ copies or substantial portions of the Software.
 - *Name*: SPARK45118
 - *Email*: [xboxing098@gmail.com](mailto:xboxing098@gmail.com)
 - *GitHub*: [@SPARK45118](https://github.com/SPARK45118)
-- *LinkedIn*: [Connect with me](https://linkedin.com/in/spark45118)
+
 
 
 ### *Project Links*
