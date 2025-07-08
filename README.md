@@ -4,7 +4,7 @@ A comprehensive, full-stack hospital management system built with *Next.js 14, *
 
 ## Live Demo
 
-- *🌐 Production*: [https://hospital-management-system-spark45118.vercel.app](https://hospital-management-system-spark45118.vercel.app)
+- *🌐 Production*: [https://hospital-management-system-spark45118.vercel.app](https://hospital-management-system-seven-dusky.vercel.app/)
 - *📱 GitHub Repository*: [https://github.com/SPARK45118/hospital-management-system](https://github.com/SPARK45118/hospital-management-system)
 - *👨‍💻 Developer*:Team Arogya
 
